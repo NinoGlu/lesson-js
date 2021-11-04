@@ -56,7 +56,7 @@ function renderUser() {
               <td><img alt='${user}' src='${user.avatar}'/></td>
               <td>${user.first_name}</td>
               <td>${user.last_name}</td>
-              <td><button class='user_remove' type='button'>remove</button></td>
+              <td><button class='user_remove' type='button'>delet</button></td>
               <td><button class='user_info' type='button'>info</button></td>
           </tr>`;
   });
@@ -82,3 +82,18 @@ addEmail.forEach(btn => {
         tr.append(users[0].email);
     })
 })
+
+//6.
+//რაღას ვერ ვაკეთებ სწორად
+//function birthdayCakeCandles(candles) {
+  //let maxHeight = Math.max.apply(null, candles);
+  //let totalTallCandles = candles.reduce((cum, cur) => {
+  //  if (cur == maxHeight) {
+  //    cum += 1;
+  //  }
+  //  return cum;
+ // }, 0);
+  //return totalTallCandles;
+//}
+//let total  =  [18, 90, 90, 13, 90, 75, 90, 8, 90, 43];
+//alert(total)
