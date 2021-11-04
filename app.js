@@ -84,6 +84,28 @@ addEmail.forEach(btn => {
 })
 
 //6.
+//არ გამოაქვს consolshi 
+const candles =  [18, 90, 90, 13, 90, 75, 90, 8, 90, 43];
+function birthdayCakeCandles(arr) {
+  let tallest = Math. max ( ...arr)
+  let max = 0
+
+  for(let i = 0; i < arr. lenght; i++) {
+    if(arr[i] > max){
+     max - candles  [i];
+    }
+  }
+  const maxNum = candles.filter (num => num === max); 
+  return maxNum.lenght
+}
+//or
+
+function birthdayCakeCandles(arr) {
+  let tallest = Math. max ( ...arr)
+  return arr.filter((candlesHeigth) => tallest === candlesHeigth). lenght
+  const candles =  [18, 90, 90, 13, 90, 75, 90, 8, 90, 43];
+  console.log( birthdayCakeCandles(arr))
+}
 //რაღას ვერ ვაკეთებ სწორად
 //function birthdayCakeCandles(candles) {
   //let maxHeight = Math.max.apply(null, candles);
